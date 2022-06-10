@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   
   schedule:
-  - cron: 0 0 1 1 0
+  - cron: 0 12 * * 3/
   
 jobs:
   build:
@@ -18,8 +18,8 @@ jobs:
          
       - name: Setup
         run: |
-          git config --local user.email "git@xdeveryti.me"
-          git config --local user.name "Ali"
+          git config --local user.email "agungsta18@gmail.com"
+          git config --local user.name "Agung Sta"
           
       - name: Running python script
         run: python greeni.py
